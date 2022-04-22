@@ -2,10 +2,10 @@
 variable "target_account_id" {
   description = "Target account id"
   type        = string
-  default     = "1067414924688738"
+  default     = "1041484348"
 
   validation {
-    condition     = length(var.target_account_id) == 16
+    condition     = length(var.target_account_id) == 10
     error_message = "The target_account_id value must be a valid account id."
   }
 }
@@ -28,7 +28,7 @@ variable "first_contact" {
     lang = string
   })
   default = {
-    mail = "test_aliyun_alarm_1@roche.com"
+    mail = "testxxxx@163.com"
     sms  = "12388888888"
     lang = "zh-cn"
   }
@@ -41,8 +41,8 @@ variable "second_contact" {
     lang = string
   })
   default = {
-    mail = "test_aliyun_alarm_2@roche.com"
-    sms  = "12399999999"
+    mail = "testxxxxxxx@163.com"
+    sms  = "12388888888"
     lang = "zh-cn"
   }
 }
